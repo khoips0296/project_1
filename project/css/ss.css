@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title{
+	background: #808080;
+	width: 100%;
+	height: 20px
+}
+
+.top{
+	width: 100%;
+	background: #fff;
+	float: left;
+}
+.logo{
+	width: 50%;
+	float: left;
+}
+
+.hang li{
+	display: inline-block;
+	padding: 10px;
+	color: #000;
+	/* float: right */
+}
+.hang .right{
+	float: right
+}
+.hang li a{
+	text-decoration: none;
+	padding: 15px;
+	color: #000;
+	font-weight: bold;
+	
+}
+
+.icon span{
+	padding-left: 35px
+}
+.icon .circle{
+	border-radius: 50%;
+	background: red;
+	width: 15px;
+	height: 15px;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 8px;
+	font-size: 10px;
+	padding-right: 4px;
+}
+.icon ._1{
+	position: relative
+}
+@media screen and (max-width: 768px) {
+	.top{
+		display: none
+	}
+}
+.bg-menu{
+	border: none;
+	width: 200px
+}
+.bg-menu a:hover{
+	color: red
+}
+.lg{
+	width: 30%;
+	float: right;
+}
+.item{
+	padding-right: 10px;
+	color: #000;
+}
+.fooder{
+	width: 100%;
+	background: #eeeeee;
+	padding: 100px 20px
+	
+}
+.fooder1 div div img{
+	width: 100px
+}
+.fooder1 div div li a img{
+	width: 20px;
+	text-decoration: none;
+
+}
+.fooder1 div div li{
+	display: inline-block;
+	border-bottom: 1px solid #000
+}
+.fooder1 div div li a{
+	padding-right: 10px;
+	padding: 10px
+}
+
+.text1{
+	width: 30%;
+	float: left;
+	margin-left: 15px
+}
+.text2{
+	width: 10%;
+	float: left;
+}
+#icon div img{
+	width: 20px
+}
+.fooder1{
+	width: 96%;
+
+}
+
+.text4 div{
+	width: 100px;
+	
+}
+.text3 div{
+	width: 121px
+}
+
+.text4 div a{
+	color: #000
+}
+.text3 div a{
+	color: #000
+
+}
+
+.fooder2{
+	margin-top: 50px;
+	margin-bottom: 50px
+}
+.fooder p{
+	margin-bottom: 50px
+}
+.fooder3 div div img{
+	width: 200px;
+	margin-bottom: 80px
+}
+.logo4{
+	margin-top: 28px
+}
+._a{
+	width: 100px;
+	float: left
+}
+._b	{
+	width: 100px;
+	float: left
+}

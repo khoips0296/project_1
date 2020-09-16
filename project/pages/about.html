@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html ng-app="project" ng-controller="projectCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wilson Sport Good</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/">
+	<link rel="stylesheet" type="text/css" href="../font-themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="../fonts-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/about.css">
+</head>
+<body>
+	<!-- header section -->
+	<header id="header" class="bg-header">
+		<div class="container">
+			<div class="top row">
+				<div class="logo col-md-6">
+
+					<li>
+						<a href="../index.html" title=""><img src="../images/Wilson_Sport.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="adidas()" title=""><img src="../images/Adidas-logo-1.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="nike()" title=""><img src="../images/logo-nike.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="puma()" title=""><img src="../images/lg-puma.png" alt="" width="40px"></a>
+					</li>
+
+				</div>
+				<div class="col-md-6 des-2">
+					<a href="login.html" title=""><label>{{_name1}}</label></a>
+					<span>|</span>
+					<a href="login.html" title="" class="sign">SIGN UP</a>
+					<span>|</span>
+					<select name="">
+						<option value="">VIETNAMESE</option>
+						<option value="">ENGLISH</option>
+						<option value="">JAPANESE</option>
+					</select>
+				</div>
+
+			</div>
+		</div>
+	</header><!-- /header -->
+	<!-- nav section -->
+	<div class="bg-light">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light rounded big-menu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="logo">
+					<a href="../index.html" title="">
+						<img src="../images/lggg.png" alt="" width="50px">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse menu" id="navbarsExample09">
+					<ul class="navbar-nav mr-auto menu-res">
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								SHOES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allShoes()">All shoes</a>
+								<a class="dropdown-item" href="products.html" ng-click="menShoes()">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="womenShoes()">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="sportShoes()">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="lifeShoes()">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="perShoes()">Performence</a>
+								<a class="dropdown-item" href="products.html" ng-click="oriShoes()">Original</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								CLOTHING
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allClo()">All Clothing</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloMen()">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloWomen()">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloSport()">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloLife()">Life style</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								ACCESSORIES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="acc()">All Accessories</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc()">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc()">Sport</a>
+
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								BRAND
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="adidas()">ADIDAS</a>
+								<a class="dropdown-item" hhref="products.html" ng-click="nike()">NIKE</a>
+								<a class="dropdown-item" href="products.html" ng-click="puma()">PUMA</a>
+							</div>
+						</li>
+
+						<li class="nav-item item">
+							<a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+								ABOUT US
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icon text-right">
+					<span class="ti-search" id="tiSearch"></span>
+					<a href="cart.html" title=""><span class="ti-shopping-cart _1"></span></a>
+					<label class="circle">{{cou}}</label>
+					<a href="" title="" ng-click="showLike(likes)"><span class="ti-heart"></span></a>
+					<label class="circle-2">{{couLike}}</label>
+
+
+					<!-- like product modal -->
+					<div class="modal fade" id="modal-like">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<h3>My favorite cart</h3>
+									<table class="table table-inverse">
+										<thead>
+											<tr>
+												<th>N.order</th>
+												<th>Product name</th>
+												<th>Images</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="(key, like) in love">
+												<td>{{key + 1}}</td>
+												<td>{{like.name}}</td>
+												<td><img ng-src="{{like.img}}" alt="" height="50px"></td>
+												<td><a href="" title="" ng-click="deleteLike(like)" class="del">Delete</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+
+				</div>
+
+			</nav>
+		</div>
+	</div>
+
+	<!-- search section -->
+	<div class="bg-light">
+		<div class="container">
+			<form class="form-inline searchMenu">
+				<span><b>SEARCH</b></span>
+				<input type="text" class="" id="" placeholder="Search" ng-model="key">
+			</form>
+		</div>
+	</div>
+
+
+	<!-- main section -->
+	<main>
+		<div class="container">
+			<div class="row main1">
+				<div class="col-md-2 menu1">
+					<ul>
+						<li class="a"><a class="a1" href="">ABOUT US</a></li>
+						<li><a class="a1 b1" href="">History</a></li>
+						<li><a class="a1 b2" href="">Technology</a></li>
+					</ul>
+				</div>
+				<div class="col-md-10">
+					<div class="history">
+						<div class="col-md-12">
+							<img src="../images/about/history.png" width="100%">
+							<h2>DEVELOPED HISTORY</h2>
+							<div class="text">
+								<p>Company shares Page (TrangCorp) was established in October 07/2004 by Mr. Ho Van Trung (aka Profile page) along with the founding shareholders are relatives and friends of his, has built factories manufactured in Hiep Phuoc industrial zone, Ho Chi Minh city to produce the food product is frozen seafood from serving export markets in Europe, the Americas, Australia.</p><br>
+								<p>As founder TrangCorp, criteria deliver frozen food products of high quality for the world market, he Trang Ho is a pioneer and has met with success in his career. Stemming from the experience of a restaurant manager in Australia, Trang Ho recognize the market opportunity for these products. Before construction Trangs in Vietnam, Mr. Trang Ho has served as CEO of Page's Food in Australia since 1985. Due to the knowledge in the field of mechanical engineering, he has supported TrangCorp heavily in plant construction should have saved time and cost a lot for TrangCorp. Starting with the customer's stores and small restaurants on the street, TrangCorp has steadily built a name for himself, becoming a reputable supplier to major food distributors and super system large market in Europe, Australia, America ...</p>
+							</div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="row ">
+							<div class="col-md-6">
+								<p>Currently, over an area of 10,000 m2, the company currently operates three production lines and warehousing systems currently yield about 16 tons of finished products / day for all value-added goods. The machinery and production technology of the Company currently almost imported from abroad (Europe, Japan) then the technical department of the company self-improvement to suit the production process and improve the performance of the machines. In addition, a team of over 500 employees are well trained and professional, the company ensures the production of products with high quality and international standards accepted by the customers.</p><br>
+								<p>With target for export markets so right from its inception, has invested TrangCorp system equipment and the most modern machinery for the processing plant. The processing plant has been building the factory model of investment processes and new equipment and technology will save costs of energy consumption, ensure the best quality and the shortest time to the production a finished product.</p>
+							</div>
+							<div class="col-md-6 ">
+								<img src="../images/about/lien_he.png" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6 aboutadd">
+										<i class="fas fa-phone-alt"></i>
+										<label>0968.456.999</label>
+										<i class="fas fa-map-marker-alt"></i>
+										<label>Town hall of Bagnolet, 75004 Paris, France</label>
+										<i class="far fa-envelope"></i>
+										<label>wilsongood294@gmail.com</label>
+										<div class="map">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6672685561907!2d105.79438061437858!3d21.045995392566823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3adfc757c9%3A0x579278b4632b7fe5!2zMjM1IEhvw6BuZyBRdeG7kWMgVmnhu4d0LCBOZ2jEqWEgVMOibiwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1593090836300!5m2!1svi!2s" width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+										</div>
+									</div>
+									<div class="col-md-6 form_">
+										<form class="">
+											<p>Please fill all required fields. (*)</p>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="inputEmail4">Email</label>
+													<input type="email" class="form-control" id="inputEmail4" placeholder="Email *">
+													<p class="err" id="err1">Please write in the correct mail format.</p>
+												</div>
+												<div class="form-group col-md-6">
+													<label for="inputPassword4">Phone</label>
+													<input type="Text" class="form-control" id="inputPhone" placeholder="Phone *">
+													<p class="err" id="err2">Invalid phone number.</p>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="inputAddress">Name</label>
+												<input type="text" class="form-control" id="inputName" placeholder="Name *">
+												<p class="err" id="err3">Username must be more than 8 characters long.</p>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-8">
+													<label for="inputCity">City</label>
+													<input type="text" class="form-control" id="inputCity" placeholder="City">
+												</div>
+												
+												<div class="form-group col-md-4">
+													<label for="inputZip">Zip</label>
+													<input type="text" class="form-control" id="inputZip" placeholder="Code *">
+													<p class="err" id="err4">Invalid Code</p>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="gridCheck">
+													<label class="form-check-label" for="gridCheck">
+														Check me out
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="inputAddress">Message</p>
+												<textarea style="width: 100%; border-radius: 3px; border: 1px solid #ced4da"></textarea>
+											</div>
+											<button type="submit" class="btn btn1 btn-primary">Send information</button>
+										</form>
+									</div>
+									
+									<div class="col-md-6 img">
+										<p>Successful mailing!</p>
+										<img src="../images/ICON.jpg" width="80% " style="margin-left: 72px; margin-top: 25px">
+										<a class="send btn btn-primary" href="">Send one more time</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</main>
+
+
+
+<!-- footer section -->
+<footer class="footer bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 mt-5 mb-5">
+				<p><b>REGESTER TO GET NEWS</b></p>
+				<p>Register information to receive the latest updates</p>
+			</div>
+			<div class="col-md-4 mt-5 mb-5">
+				<form class="form-inline">
+					<input type="email" class="form-control" name="exampleInputEmail2" id="exampleInputEmail2" placeholder="Email address">
+					<!-- <input type="email" class="forCategoryntrol" category="exampleInputEmail2" id="exampleInputEmail2" placeholder="Email address"> -->
+					<button type="submit" class="btn btn-primary">Send</button>
+				</form>
+			</div>
+			<div class="col-md-3 mxh mt-5 mb-5">
+				<div class="follow">
+					<a href="" title=""><span class="ti-facebook"></span></a>
+				</div>
+				<div class="follow">
+					<a href="" title=""><span class="ti-twitter"></span></a>
+				</div>
+				<div class="follow">
+					<a href="" title=""><span class="ti-instagram"></span></a>
+				</div>
+				<div class="follow">
+					<a href="" title=""><span class="ti-camera"></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="ftSpace">
+
+		</div>
+		<div class="row">
+			<div class="col-md-5 mt-3 mb-3">
+				<p><b>INFORMATION</b></p>
+				<p>WILSON SPORRT GOOD is an e-commerce website about sports fashion. We offer our customers the best products. We always lead the trend and develop the sports fashion industry. Each product sold is committed to being 100%. With extensive transportation system, we will always serve you quickly and best.</p>
+			</div>
+			<div class="col-md-3 mt-3 mb-3">
+				<p><b>CATEGORY</b></p>
+				<div class="textFt">
+					<a href="products.html" ng-click="allShoes()">SHOES</a>
+					<a href="products.html" ng-click="allClo()">CLOTHING</a>
+					<a href="products.html" ng-click="acc()">ACCESSORIES</a>
+					<a href="about.html">ABOUT US</a>
+				</div>
+
+			</div>
+			<div class="col-md-4 mt-3 mb-3">
+				<img class="imgFt" src="../images/ft-fb.png" alt="" width="250px">
+			</div>
+		</div>
+		<div class="ftSpace">
+
+		</div>
+		<div class="row">
+			<div class="col-md-6 mt-3">
+				<p>Design by <img src="../images/aptech.png" alt="" width="80px"><span style="color: #BA30ED">BACHKHOA-APTECH</span></p>
+			</div>
+			<div class="col-md-6 mt-3 mb-3">
+				<img src="../images/payment-icon.png" alt="" style="float: right">
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-3.4.1.slim.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route.min.js"></script>
+<script src="../js/myapp.js"></script>
+
+</body>
+</html>

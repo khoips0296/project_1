@@ -1,0 +1,188 @@
+*{
+	padding: 0;
+	 margin: 0
+}
+.bg-bre{
+	background: #fff !important;
+	padding: 15px 0px
+}
+
+/* css describle section */
+.describle{
+	border-bottom: 1px solid #000;
+	margin-top: 15px
+}
+
+/* css main section */
+.product .smallImg img{
+	width: 100%;
+	border: 1px solid #000;
+	margin-top: 10px;
+	display: grid;   
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: ;
+
+}
+.product .right label{
+	padding-right: 15px
+}
+.product .checked {
+  color: orange;
+}
+.right .buttonDetail{
+	margin-top: 20px
+}
+
+button._punch:active{
+	margin-top: 0px
+}
+button._like{
+	width: 55px;
+}
+/* button._like i{
+	color: red
+} */
+@media screen and (max-width: 767px){
+	.product .right{
+		margin-top: 15px
+	}
+	.product .left{
+		display: flex;
+	    flex-flow: column;
+	}
+	.product .aa{
+		order: 1
+	}
+	.product .smallImg{
+		order: 2
+	}
+	.product .smallImg img{
+		width: 15%;
+		display: inline-block
+	}
+}
+.product .right h4 span{
+	margin-left: 10px;
+	--animate-repeat : 100;
+}
+.watch span{
+	color: red;
+	font-weight: bold
+}
+.chooseDescrip{
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	padding: 15px 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.chooseDescrip a{
+	text-decoration: none;
+	padding-right: 15px;
+	color: #000
+}
+.chooseDescrip a:hover{
+	border-bottom: 3px solid #000;
+	padding-bottom: 15px;
+	padding-right: 0px
+}
+/* description section */
+.description .left h3{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.description .left{
+	width: 90%;
+	margin: 10% 0;
+}
+@media screen and (min-width: 768px) {
+	.description .left{
+	width: 90%;
+	margin: 0% 0;
+    }
+}
+@media screen and (min-width: 992px) {
+	.description .left{
+	width: 90%;
+	margin: 10% 0;
+    }
+}
+
+/* details section */
+.details{
+	margin-top: 40px
+}
+.details h3{
+	font-weight: bold
+}
+.details ul{
+	margin-left: 20px
+}
+.details ul li{
+	margin-bottom: 10px
+}
+
+/* MODAL SECTION CSS */
+
+#modal-2 img{
+	width: 170px;
+	height: 150px
+}
+#modal-2 th p{
+	color: red;
+	
+}
+#modal-2 .title{
+	background: #eceef0;
+	font-weight: bold;
+	font-size: 20px
+}
+@media screen and (max-width: 768px) {
+	#modal-2 img{
+	width: 100%;
+	height: 100px
+    }
+}
+/* review sectiopn */
+.checked {
+  color: orange;
+}
+
+.reviews{
+	margin-top: 40px;
+	margin-bottom: 40px
+}
+.reviews .snapStar p{
+	margin-bottom: 0px
+}
+.reviews .snapStar{
+	margin-right: 0px!important;
+	padding-right: 0px!important
+}
+.reviews .tilteCmt{
+	padding-bottom: 15px;
+	margin-top: 15px
+}
+.reviews .tilteCmt span{
+	float: right
+}
+.reviews .cst1{
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+	margin-top: 15px
+}
+.reviews .tilteCmt .writeCmt textarea{
+	width: 100%;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border-radius: 10px
+}
+.reviews  .writeCmt{
+	display: none;
+	margin-bottom: 20px;
+	padding-top: 20px
+}
+.reviews  .writeCmt input{
+	margin-left: 10px;
+	border-radius: 10px
+}

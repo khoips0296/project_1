@@ -1,0 +1,214 @@
+*{
+	padding: 0;
+	margin: 0
+}
+.bg-bre{
+	background:  #eceef0!important;
+	padding: 15px 0px;
+}
+
+/* css describle section */
+.describle{
+	border-bottom: 1px solid #fff;
+	margin-top: 15px
+}
+
+body{
+	background: #eceef0
+}
+.productAll{
+	background: #fff;
+}
+
+/* css main section */
+
+
+/* css filter section */
+
+.sort a{
+	color: #fff;
+	background: orange;
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	box-sizing: border-box
+}
+.sort span{
+	float: right
+}
+@media screen and (max-width: 767px) {
+	.sort span{
+	    float: left
+    }
+}
+.sort span select{
+	background: #CDCCCC;
+	border: none;
+	border-radius: 5px
+}
+.itemCard{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: none;
+}
+.itemCard li{
+	font-size: 13px
+}
+.itemCard .checked {
+  color: orange;
+}
+.itemCard .namePro{
+	margin-bottom: 0px;
+	padding-top: 10px;
+}
+.itemCard .namePro a{
+	color: #000;
+	text-decoration: none
+}
+.itemCard .namePro a:hover{
+	font-weight: bold;
+	color: red
+}
+.itemCard .pricePro{
+	color: red;
+	margin-bottom: 5px;
+	font-weight: bold
+}
+.itemCard .pricePro span{
+	margin-left: 10px;
+	--animate-repeat : 100;
+}
+.itemCard:hover{
+	border: 2px solid orange
+}
+.itemCard .card-body a{
+	text-decoration: none
+}
+.txt i{
+	font-size: 25px;
+	color: #fff
+}
+.txt .fa-shopping-cart{
+	margin-right: 10px
+}
+.txt .fa-heart,.fa-eye{
+	margin-left: 10px
+}
+.img:hover div.txt {
+	opacity: 1;
+	transform: translateY(10px);
+	transition:ease-in-out 1s;
+}
+.txt i:hover{
+	color: red
+}
+.img:hover img {
+	transform: scale(1.5);
+	transition: all ease-in-out 1s;
+}
+
+.img {
+	position: relative;
+	overflow: hidden;
+}
+
+.txt {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.52);
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+	/* box-sizing: border-box; */
+	opacity: 0;
+}
+.itemCard .des{
+	padding-left: 10px;
+	/* background: #eceef0 */
+}
+
+@media screen and (min-width: 320px) {
+	.itemCard img{
+		height: 270px
+	}
+}
+@media screen and (min-width: 375px) {
+	.itemCard img{
+		height: 320px
+	}
+}
+@media screen and (min-width: 425px) {
+	.itemCard img{
+		height: 370px
+	}
+}
+@media screen and (min-width: 767px) {
+	.itemCard img{
+		height: 140px;
+	}
+	.txt {
+		width: 100%;
+		height: 120%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.itemCard img{
+		height: 190px
+	}
+	.txt {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.itemCard img{
+		height: 220px
+	}
+}
+@media screen and (min-width: 1440px) {
+	.itemCard img{
+		height: 230px
+	}
+}
+img {
+	transition: all ease-in-out ;
+}
+
+
+.control_1, .control_2, .control_3{
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	border-top: 1px solid #000;
+	padding-top: 15px
+}
+.control_1 i{
+	float: right
+}
+.control_2 i{
+	float: right
+}
+.control_3 i{
+	float: right
+}
+.content_1, .content_2, .content_3{
+	margin-top: 10px;
+	display: none;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+
+/* modal section */
+#modal-1 ._body{
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px;
+	color: #fff
+}
+footer{
+	color: #000
+}

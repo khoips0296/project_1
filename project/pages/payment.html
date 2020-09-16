@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html ng-app="project" ng-controller="projectCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wilson Sport Good</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/">
+	<link rel="stylesheet" type="text/css" href="../font-themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="../fonts-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/payment.css">
+</head>
+<body>
+	<!-- header section -->
+	<header id="header" class="bg-header">
+		<div class="container">
+			<div class="top row">
+				<div class="logo col-md-6">
+
+					<li>
+						<a href="../index.html" title=""><img src="../images/Wilson_Sport.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="adidas()" title=""><img src="../images/Adidas-logo-1.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="nike()" title=""><img src="../images/logo-nike.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="puma()" title=""><img src="../images/lg-puma.png" alt="" width="40px"></a>
+					</li>
+
+				</div>
+				<div class="col-md-6 des-2">
+					<a href="login.html" title=""><label>{{_name1}}</label></a>
+					<span>|</span>
+					<a href="pages/login.html" title="" class="sign">SIGN UP</a>
+					<span>|</span>
+					<select name="">
+						<option value="">VIETNAMESE</option>
+						<option value="">ENGLISH</option>
+						<option value="">JAPANESE</option>
+					</select>
+				</div>
+
+			</div>
+		</div>
+	</header><!-- /header -->
+	<!-- nav section -->
+	<div class="bg-light">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light rounded big-menu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="logo">
+					<a href="../index.html" title="">
+						<img src="../images/lggg.png" alt="" width="50px">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse menu" id="navbarsExample09">
+					<ul class="navbar-nav mr-auto menu-res">
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								SHOES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allShoes()">All shoes</a>
+								<a class="dropdown-item" href="products.html" ng-click="menShoes()">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="womenShoes()">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="sportShoes()">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="lifeShoes()">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="perShoes()">Performence</a>
+								<a class="dropdown-item" href="products.html" ng-click="oriShoes()">Original</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								CLOTHING
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allClo()">All Clothing</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloMen()">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloWomen()">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloSport()">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloLife()">Life style</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								ACCESSORIES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="acc()">All Accessories</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc()">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc()">Sport</a>
+
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								BRAND
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="adidas()">ADIDAS</a>
+								<a class="dropdown-item" hhref="products.html" ng-click="nike()">NIKE</a>
+								<a class="dropdown-item" href="products.html" ng-click="puma()">PUMA</a>
+							</div>
+						</li>
+
+						<li class="nav-item item">
+							<a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+								ABOUT US
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icon text-right">
+					<span class="ti-search" id="tiSearch"></span>
+					<a href="cart.html" title=""><span class="ti-shopping-cart _1"></span></a>
+					<label class="circle">{{cou}}</label>
+					<a href="" title="" ng-click="showLike(likes)"><span class="ti-heart"></span></a>
+					<label class="circle-2">{{couLike}}</label>
+
+
+					<!-- like product modal -->
+					<div class="modal fade" id="modal-like">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<h3>My favorite cart</h3>
+									<table class="table table-inverse">
+										<thead>
+											<tr>
+												<th>N.order</th>
+												<th>Product name</th>
+												<th>Images</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="(key, like) in love">
+												<td>{{key + 1}}</td>
+												<td>{{like.name}}</td>
+												<td><img ng-src="{{like.img}}" alt="" height="50px"></td>
+												<td><a href="" title="" ng-click="deleteLike(like)" class="del">Delete</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+
+				</div>
+
+			</nav>
+		</div>
+	</div>
+
+	<!-- search section -->
+	<div class="bg-light">
+		<div class="container">
+			<form class="form-inline searchMenu">
+				<span><b>SEARCH</b></span>
+				<input type="text" class="" id="" placeholder="Search">
+			</form>
+		</div>
+	</div> 
+
+
+	<main>
+		<div class="sequence">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p>
+							<span class="step1 step">Delivery address</span> <i class="fas fa-hand-point-right"></i>
+							<span class="step2 _step">Payment methods</span> <i class="fas fa-hand-point-right"></i>
+							<span class="step3 _step">Order Success</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- address delivery -->
+		<div class="container addressDel">
+			<div class="row">
+				<div class="col-md-8 left">
+					<h4><b>Delivery address</b></h4>
+					<form>
+						<div class="row">
+							<div class="col-md-6">
+								<span>First Name <label>(*)</label></span><br>
+								<input type="text" name="" id="fName">
+								<p class="er err" id="er1">There are at least 3 characters and no special characters</p>
+							</div>
+							<div class="col-md-6">
+								<span>Last Name <label>(*)</label></span><br>
+								<input type="text" name="" id="lName">
+								<p class="er err" id="er2">There are at least 3 characters and no special characters</p>
+							</div>
+						</div>
+						<span>Email <label>(*)</label></span><br>
+						<input type="text" name="" id="eMail">
+						<p class="er err" id="er3">Email is not in the correct format</p>
+						<div class="row">
+							<div class="col-md-6">
+								<span>Province <label>(*)</label></span><br>
+								<input type="text" name="" id="province">
+								<p class="er err" id="er4">There are at least 3 characters and no special characters</p>
+							</div>
+							<div class="col-md-6">
+								<span>City <label>(*)</label></span><br>
+								<input type="text" name="" id="city">
+								<p class="er err" id="er5">There are at least 3 characters and no special characters</p>
+							</div>
+						</div>
+						<span>Address <label>(*)</label></span><br>
+						<input type="text" name="" id="addr">
+						<p class="er err" id="er6">There are at least 3 characters and no special characters</p>
+						<span>Zip code</span><br>
+						<input type="text" name="" id="zipCode">
+						<p class="er err" id="er7">There are at least 3 characters and no special characters</p>
+						<span>Phone number <label>(*)</label></span><br>
+						<input type="text" name="" id="phone">
+						<p class="er err" id="er8">The phone number is not in the correct format</p>
+					</form>
+				</div>
+				<div class="col-md-4 right">
+					<div class="details">
+						<p style="font-weight: bold"><b>ODER SUMMARY</b></p>
+						<p>{{cou}} ITEM <span>{{total|currency:$:0}}</span></p>
+						<p>DELIVERY <span>Free</span></p>
+						<p>Sale tax <span>-</span></p>
+						<p><b>TOTAL</b> <span>{{total|currency:$:0}}</span></p>
+					</div>
+					<a href="" title="" class="btn _bt1" id="addressDel">Continue</a>
+					<div class="add">
+						<p><b>ARRIVING???</b></p>
+						<p>Due to increased safety measures at our distribution centre, please expect a delay of 3 to 5 days for your order to ship</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- payment method -->
+		<div class="container payment">
+			<div class="row">
+				<div class="col-md-8 left">
+					<h4><b>Payment methods</b></h4>
+					<!-- debit section -->
+					<div class="debit">
+						<p><i class="fas fa-lock"></i> All transactions are safe and secure</p>
+						<p><i class="far fa-circle"></i> <b>CREDIT / DEBIT CARD</b></p>
+						<span>Account name <label>(*)</label></span><br>
+						<input type="text" name="" id="acc">
+						<p class="er err" id="err1">There are at least 3 characters and no special characters</p>
+						<span>Serial number <label>(*)</label></span><br>
+						<input type="text" name="" id="serial"> 
+						<p class="er err" id="err2">There are at least 3 characters, not lowercase, with both letters and numbers</p>
+						<span>ID Card</span><br>
+						<input type="text" name="" id="idCard">
+						<p class="er err" id="err3">There are at least 3 characters, not lowercase, with both letters and numbers</p>
+						<a href="" title="" class="btn _bt1" id="order">PAYMENT BY CREDIT / DEBIT CARD</a>
+					</div>
+					<!-- cod section -->
+					<div class="cod">
+						<p><i class="far fa-circle"></i> <b>CASH ON DELIVERY</b></p>
+						<p><input type="checkbox" name="" id="checkCod">Payment by cash on delivery</p>
+						<a href="" title="" class="btn _bt1" id="ok">PAYMENT BY CASH ON DELIVERY</a>
+					</div>
+				</div>
+				<div class="col-md-4 right">
+					<div class="details">
+						<p style="font-weight: bold"><b>ODER SUMMARY</b></p>
+						<p>{{cou}} ITEM <span>{{total|currency:$:0}}</span></p>
+						<p>DELIVERY <span>Free</span></p>
+						<p>Sale tax <span>-</span></p>
+						<p><b>TOTAL</b> <span>{{total|currency:$:0}}</span></p>
+					</div>
+					<div class="add">
+						<p><b>DELIVERY METHOD</b></p>
+						<p>Standard Delivery: FREE within 3-9 business days</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- order complete -->
+		<div class="container">
+			<div class="orderC">
+				<p>ORDER COMPLETE!!!</p>
+				<div>
+					<img src="../images/ICON.jpg" alt="" width="100%" height="70%">
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<!-- footer section -->
+	<footer class="footer bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 mt-5 mb-5">
+					<p><b>REGESTER TO GET NEWS</b></p>
+					<p>Register information to receive the latest updates</p>
+				</div>
+				<div class="col-md-4 mt-5 mb-5">
+					<form class="form-inline">
+						<input type="email" class="form-control" name="exampleInputEmail2" id="exampleInputEmail2" placeholder="Email address">
+						<!-- <input type="email" class="forCategoryntrol" category="exampleInputEmail2" id="exampleInputEmail2" placeholder="Email address"> -->
+						<button type="submit" class="btn btn-primary">Send</button>
+					</form>
+				</div>
+				<div class="col-md-3 mxh mt-5 mb-5">
+					<div class="follow">
+						<a href="" title=""><span class="ti-facebook"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-twitter"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-instagram"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-camera"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="ftSpace">
+
+			</div>
+			<div class="row">
+				<div class="col-md-5 mt-3 mb-3">
+					<p><b>INFORMATION</b></p>
+					<p>WILSON SPORRT GOOD is an e-commerce website about sports fashion. We offer our customers the best products. We always lead the trend and develop the sports fashion industry. Each product sold is committed to being 100%. With extensive transportation system, we will always serve you quickly and best.</p>
+				</div>
+				<div class="col-md-3 mt-3 mb-3">
+					<p><b>CATEGORY</b></p>
+					<div class="textFt">
+						<a href="products.html" ng-click="allShoes()">SHOES</a>
+						<a href="products.html" ng-click="allClo()">CLOTHING</a>
+						<a href="products.html" ng-click="acc()">ACCESSORIES</a>
+						<a href="about.html">ABOUT US</a>
+					</div>
+				</div>
+				<div class="col-md-4 mt-3 mb-3">
+					<img class="imgFt" src="../images/ft-fb.png" alt="" width="250px">
+				</div>
+			</div>
+			<div class="ftSpace">
+
+			</div>
+			<div class="row">
+				<div class="col-md-6 mt-3">
+					<p>Design by <img src="../images/aptech.png" alt="" width="80px"><span style="color: #BA30ED">BACHKHOA-APTECH</span></p>
+				</div>
+				<div class="col-md-6 mt-3 mb-3">
+					<img src="../images/payment-icon.png" alt="" style="float: right">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/myapp.js"></script>
+
+</body>
+</html>

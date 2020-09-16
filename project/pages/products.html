@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html ng-app="project" ng-controller="projectCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wilson Sport Good</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="../fonts-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/products.css">
+</head>
+<body>
+	<!-- header section -->
+	<header id="header" class="bg-header">
+		<div class="container">
+			<div class="top row">
+				<div class="logo col-md-6">
+
+					<li>
+						<a href="../index.html" title=""><img src="../images/Wilson_Sport.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="adidas();reload();" title=""><img src="../images/Adidas-logo-1.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="nike();reload();" title=""><img src="../images/logo-nike.jpg" alt="" width="40px"></a>
+						<a href="products.html" ng-click="puma();reload();" title=""><img src="../images/lg-puma.png" alt="" width="40px"></a>
+					</li>
+
+				</div>
+				<div class="col-md-6 des-2">
+					<a href="login.html" title=""><label>{{_name1}}</label></a>
+					<span>|</span>
+					<a href="login.html" title="" class="sign">SIGN UP</a>
+					<span>|</span>
+					<select name="">
+						<option value="">VIETNAMESE</option>
+						<option value="">ENGLISH</option>
+						<option value="">JAPANESE</option>
+					</select>
+				</div>
+
+			</div>
+		</div>
+	</header><!-- /header -->
+	<!-- nav section -->
+	<div class="bg-light">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light rounded big-menu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="logo">
+					<a href="../index.html" title="">
+						<img src="../images/lggg.png" alt="" width="50px">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse menu" id="navbarsExample09">
+					<ul class="navbar-nav mr-auto menu-res">
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								SHOES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allShoes();reload();">All shoes</a>
+								<a class="dropdown-item" href="products.html" ng-click="menShoes();reload();">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="womenShoes();reload();">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="sportShoes();reload();">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="lifeShoes();reload();">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="perShoes();reload();">Performence</a>
+								<a class="dropdown-item" href="products.html" ng-click="oriShoes();reload();">Original</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								CLOTHING
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="allClo();reload();">All Clothing</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloMen();reload();">Men</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloWomen();reload();">Women</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloSport();reload();">Sport</a>
+								<a class="dropdown-item" href="products.html" ng-click="cloLife();reload();">Life style</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								ACCESSORIES
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="acc();reload();">All Accessories</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc();reload();">Life style</a>
+								<a class="dropdown-item" href="products.html" ng-click="acc();reload();">Sport</a>
+
+							</div>
+						</li>
+
+						<li class="nav-item dropdown item">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								BRAND
+							</a>
+							<div class="dropdown-menu bg-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="products.html" ng-click="adidas();reload();">ADIDAS</a>
+								<a class="dropdown-item" hhref="products.html" ng-click="nike();reload();">NIKE</a>
+								<a class="dropdown-item" href="products.html" ng-click="puma();reload();">PUMA</a>
+							</div>
+						</li>
+
+						<li class="nav-item item">
+							<a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+								ABOUT US
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icon text-right">
+					<span class="ti-search" id="tiSearch"></span>
+					<a href="cart.html" title=""><span class="ti-shopping-cart _1"></span></a>
+					<label class="circle">{{cou}}</label>
+					<a href="" title="" ng-click="showLike(likes)"><span class="ti-heart"></span></a>
+					<label class="circle-2">{{couLike}}</label>
+
+
+					<!-- like product modal -->
+					<div class="modal fade" id="modal-like">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<h3>My favorite cart</h3>
+									<table class="table table-inverse">
+										<thead>
+											<tr>
+												<th>N.order</th>
+												<th>Product name</th>
+												<th>Images</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="(key, like) in love">
+												<td>{{key + 1}}</td>
+												<td>{{like.name}}</td>
+												<td><img ng-src="{{like.img}}" alt="" height="50px"></td>
+												<td><a href="" title="" ng-click="deleteLike(like)" class="del">Delete</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+				</div>
+
+			</nav>
+		</div>
+	</div>
+
+	<!-- search section -->
+	<div class="bg-light">
+		<div class="container">
+			<form class="form-inline searchMenu">
+				<span><b>SEARCH</b></span>
+				<input type="text" class="" id="" placeholder="Search" ng-model="key">
+			</form>
+		</div>
+	</div>
+
+	<!-- main section -->
+	<main class="mb-3">
+		<div class="describle">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-6">
+						<p><i class="fas fa-truck"></i>FREE SHIPPING WITH EVERY ORDER</p>
+					</div>
+					<div class="col-md-6">
+						<p><i class="fas fa-undo"></i>RETURN EASILY PRODUCTS</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<nav aria-label="breadcrumb bg-bre">
+				<ol class="breadcrumb bg-bre">
+					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+					<!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+					<li class="breadcrumb-item active" aria-current="page">Products</li>
+				</ol>
+			</nav>
+		</div>
+
+		<!-- products section -->
+		<div class="container productAll">
+			<div class="row mt-3 mb-3 pt-3">
+				<div class="col-12">
+					<h2>PRODUCTS CATEGORY</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h5>Shopping by:</h5>
+					<!-- <div class="control_1">
+						<span>Brand</span>
+						<i class="fas fa-plus ic1"></i>
+					</div>
+					<div class="content_1">
+						<input type="checkbox" name=""> Adidas
+					</div>
+					<div class="control_2">
+						<span>Style</span>
+						<i class="fas fa-plus ic2"></i>
+					</div>
+					<div class="content_2">
+						<input type="checkbox" name=""> Life style
+					</div>
+					<div class="control_3">a
+						<span>Collection</span>
+						<i class="fas fa-plus ic3"></i>
+					</div>
+					<div class="content_3">
+						<input type="checkbox" name=""> Original
+					</div> -->
+					
+					<a href="products.html" title="" ng-click="oriShoes();reload();"><img class="mt-3 mb-1" src="../images/wt.gif" alt="" width="100%"></a>
+					<a href="products.html" title="" ng-click="allClo();reload();"><img class="mt-3 mb-1" src="../images/bn-pro1.gif" alt="" width="100%"></a>
+					<a href="products.html" title="" ng-click="acc();reload();"><img src="../images/bn-pro2.gif" alt="" width="100%"></a>
+				</div>
+				<div class="col-md-9">
+					<div class="row sort">
+						<div class="col-md-6 mt-3">
+							<label>Offer:</label>
+							<a href="products.html" ng-click="oriShoes();reload();" title="">Original</a>
+							<a href="products.html" ng-click="lifeShoes();reload();" title="">Life style</a>
+						</div>
+						<div class="col-md-6 mt-3">
+							<span>Sort by: 
+								<select name="" ng-model="sort">
+									<option value="">Random</option>
+									<option value="price">Price: Low to High</option>
+									<option value="-price">Price: High to Low</option>
+									<option value="name">Name: A to Z</option>
+									<option value="-name">Name: Z to A</option>
+								</select>
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4" ng-repeat="(key, value) in allS|filter:{name:key}| orderBy:sort">
+							<div class="card itemCard">
+								<div class="img">
+									<img class="card-img-top" ng-src="{{value.img}}" alt="Card image cap">
+									<div class="txt"> 
+										<h3>{{value.brand}}</h3>
+										<p>{{value.name}}</p>
+										<a href="#" ng-click="modalShow(value)"><i class="fa fa-eye"></i></a>
+									</div>
+								</div>
+								<div class="des">
+									<p class="namePro"><a href="detail.html" title="" ng-click="showDetail(value.id)">{{value.name}}</a></p>
+									<p class="pricePro">{{value.price|currency:$:0}}<span class="badge badge-danger animate__animated animate__tada animate__repeat-3 animate__delay-1s">Sale 50%</span></p>
+									<div>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+									
+									<li style="color: #000">Installment assistance</li>
+									<li style="color: #000" class="mb-2">Free Returns and Free Shipping on orders over $50!</li>
+									<!-- <p style="float: right">ship from VIETNAM</p> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- modal section -->
+	<div class="modal fade" id="modal-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content bg-dark">
+				<div class="modal-body">
+					<div class="_body">
+						<div class="row">
+							<div class="col-5">
+								<img ng-src="{{showInfo.img}}" alt="" width="100%" height="150px">
+							</div>
+							<div class="col-7">
+								<p style="font-size: 20px"><b>{{showInfo.brand}}</b></p>
+								<p style="font-size: 20px"><b>{{showInfo.name}}</b></p>
+								<p style="color: red"><b>{{showInfo.price|currency:$:0}}</b></p>
+							</div>
+						</div>
+						<div class="mt-3">
+							<li>Category: {{showInfo.category}}</li>
+							<li>For: {{showInfo.sex}}</li>
+							<li>Type: {{showInfo.type}}</li>
+							<li>Collection: {{showInfo.collection}}</li>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+
+	<!-- footer section -->
+	<footer class="footer bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 mt-5 mb-5">
+					<p><b>REGESTER TO GET NEWS</b></p>
+					<p>Register information to receive the latest updates</p>
+				</div>
+				<div class="col-md-4 mt-5 mb-5">
+					<form class="form-inline">
+						<input type="email" class="form-control" name="exampleInputEmail2" id="exampleInputEmail2" placeholder="Email address">
+						<button type="submit" class="btn btn-primary">Send</button>
+					</form>
+				</div>
+				<div class="col-md-3 mxh mt-5 mb-5">
+					<div class="follow">
+						<a href="" title=""><span class="ti-facebook"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-twitter"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-instagram"></span></a>
+					</div>
+					<div class="follow">
+						<a href="" title=""><span class="ti-camera"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="ftSpace">
+
+			</div>
+			<div class="row">
+				<div class="col-md-5 mt-3 mb-3">
+					<p><b>INFORMATION</b></p>
+					<p>WILSON SPORRT GOOD is an e-commerce website about sports fashion. We offer our customers the best products. We always lead the trend and develop the sports fashion industry. Each product sold is committed to being 100%. With extensive transportation system, we will always serve you quickly and best.</p>
+				</div>
+				<div class="col-md-3 mt-3 mb-3">
+					<p><b>CATEGORY</b></p>
+					<div class="textFt">
+						<a href="products.html" ng-click="allShoes();reload();">SHOES</a>
+						<a href="products.html" ng-click="allClo();reload();">CLOTHING</a>
+						<a href="products.html" ng-click="acc();reload();">ACCESSORIES</a>
+						<a href="about.html">ABOUT US</a>
+					</div>
+
+				</div>
+				<div class="col-md-4 mt-3 mb-3">
+					<img class="imgFt" src="../images/ft-fb.png" alt="" width="250px">
+				</div>
+			</div>
+			<div class="ftSpace">
+
+			</div>
+			<div class="row">
+				<div class="col-md-6 mt-3">
+					<p>Design by <img src="../images/aptech.png" alt="" width="80px"><span style="color: #BA30ED">BACHKHOA-APTECH</span></p>
+				</div>
+				<div class="col-md-6 mt-3 mb-3">
+					<img src="../images/payment-icon.png" alt="" style="float: right">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/myapp.js"></script>
+
+</body>
+</html>
